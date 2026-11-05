@@ -1,84 +1,190 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f8f6f2;
     color: #222;
 }
 
 
 .topo {
-    background-color: #111111;
-    color: white;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8%;
-    position: relative;
+    background-color: #ffffff;
+    padding: 35px 20px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
 }
 
 .logo {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: bold;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
+    position: absolute;
 }
 
-.logo span,
-footer span {
-    color: #e60023;
+.logo span {
+    color: brown;
 }
 
 .slogan {
-    font-size: 12px;
-    letter-spacing: 4px;
+    color: chocolate;
+    font-size: 25px;
+    font-style: italic;
+    position: absolute;
+    padding: 46px 20px;
+    top: 80%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
 }
 
 .sacola {
-    font-size: 25px;
+    font-size: 28px;
     cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform:translate(-0%,-0%);
 }
 
-
 .menu {
-    background-color: #e60023;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
     padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu a {
+    color: black;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.menu a:hover {
-    color: #111;
+.banner {
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.banner-texto {
+    color: white;
+
+}
+
+.banner-texto p {
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    color: #b28b60
+}
+
+.banner-texto h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: gray;
+    color: white padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #222;
 }
 
 
-.banner {
-    height: 480px;
-    background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600");
-    background-size: cover;
-    background-position: center;
+.categoria {
+    padding: 8% 8px;
+    text-align: center;
+
+}
+
+.categorias h2,
+.produtos h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.categoria-lista {
     display: flex;
-    align-items: center;
-    padding-left: 10%;
-    position: relative;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+
+.categoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoria h3 {
+    margin-top: 15px;
+    font-size: 19px;
+    color: #333;
+}
+
+.produtos {
+    background-color: #eeeae3;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #777;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+
+.produto-lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: white;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
 }
